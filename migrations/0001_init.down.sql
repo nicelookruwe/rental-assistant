@@ -1,0 +1,15 @@
+DROP TRIGGER IF EXISTS meters_append_only ON meters;
+DROP TRIGGER IF EXISTS payments_append_only ON payments;
+DROP TRIGGER IF EXISTS contracts_set_updated_at ON contracts;
+DROP TRIGGER IF EXISTS tenants_set_updated_at ON tenants;
+DROP TRIGGER IF EXISTS properties_set_updated_at ON properties;
+DROP FUNCTION IF EXISTS forbid_mutation();
+DROP FUNCTION IF EXISTS set_updated_at();
+DROP TABLE IF EXISTS notifications;
+DROP TABLE IF EXISTS documents;
+DROP TABLE IF EXISTS meters;
+DROP TABLE IF EXISTS payments;
+DROP TABLE IF EXISTS contracts;
+DROP TABLE IF EXISTS tenants;
+DROP TABLE IF EXISTS properties;
+DROP TABLE IF EXISTS users;
