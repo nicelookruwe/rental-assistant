@@ -1,0 +1,34 @@
+﻿.lp-root {
+  --lp-bg: #f7f8fc;
+  --lp-surface: #fff;
+  --lp-white: #fff;
+  --lp-primary: #5365f5;
+  --lp-primary-strong: #4453e0;
+  --lp-accent: #8b7cf6;
+  --lp-accent-soft: #e9ecff;
+  --lp-success: #087443;
+  --lp-success-soft: #e9f8ef;
+  --lp-neutral-soft: #eef0f4;
+  --lp-glass-border: rgba(255, 255, 255, .72);
+  --lp-glass-surface: rgba(255, 255, 255, .76);
+  --lp-focus-ring: rgba(83, 101, 245, .35);
+  --lp-primary-shadow: rgba(83, 101, 245, .25);
+  --lp-building-shadow: rgba(83, 101, 245, .12);
+  --lp-building-body: #dce5f2;
+  --lp-building-floor: #c7d3e4;
+  --lp-building-panel: #6878d8;
+  --lp-building-key-light: #fffaf0;
+  --lp-building-fill-light: #dfe7ff;
+  --lp-text: #111827;
+  --lp-text-muted: #667085;
+  --lp-border: rgba(17, 24, 39, .1);
+  --lp-radius-md: 16px;
+  --lp-radius-lg: 20px;
+  --lp-radius-xl: 24px;
+  --lp-shadow-sm: 0 2px 8px rgba(17, 24, 39, .06);
+  --lp-shadow-md: 0 12px 32px rgba(17, 24, 39, .1);
+  --lp-shadow-lg: 0 24px 64px rgba(17, 24, 39, .14);
+  --lp-space-1: 4px; --lp-space-2: 8px; --lp-space-3: 12px; --lp-space-4: 16px;
+  --lp-space-5: 20px; --lp-space-6: 24px; --lp-space-8: 32px; --lp-space-10: 40px;
+  --lp-space-12: 48px; --lp-space-16: 64px; --lp-space-20: 80px;
+}

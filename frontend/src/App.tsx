@@ -1,3 +1,4 @@
+import { lazy, Suspense } from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
 
 import { useAuth } from './auth';
@@ -12,6 +13,11 @@ import Payments from './pages/Payments';
 import Properties from './pages/Properties';
 import PropertyDetails from './pages/PropertyDetails';
 import Tenants from './pages/Tenants';
+const LandingPage = lazy(() => import('./landing/LandingPage'));
+
+function LandingRoute() {
+  return <Suspense fallback={<div className="centered"><Spinner /></div>}><LandingPage /></Suspense>;
+}
 
 export default function App() {
   const { user, loading } = useAuth();
@@ -27,6 +33,7 @@ export default function App() {
   if (!user) {
     return (
       <Routes>
+        <Route path="/landing/*" element={<LandingRoute />} />
         <Route path="/login" element={<Login />} />
         <Route path="*" element={<Navigate to="/login" replace />} />
       </Routes>
@@ -35,6 +42,7 @@ export default function App() {
 
   return (
     <Routes>
+      <Route path="/landing/*" element={<LandingRoute />} />
       <Route path="/login" element={<Navigate to="/" replace />} />
       <Route element={<Layout />}>
         <Route index element={<Dashboard />} />
