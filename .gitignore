@@ -9,3 +9,5 @@ web
 # Build artifacts
 bin/
 *.exe
+
+.tmp/
